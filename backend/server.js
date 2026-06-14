@@ -65,6 +65,6 @@ SCORE: [a number from 0 to 100 where 0 = completely fake, 100 = completely legit
 
 });
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log('🚀 Server running on http://localhost:5000');
 });
