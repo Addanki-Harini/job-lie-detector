@@ -1,0 +1,4 @@
+node_modules/
+.env
+backend/node_modules/
+job-lie-detector/node_modules/

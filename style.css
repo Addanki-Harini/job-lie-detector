@@ -1,0 +1,80 @@
+/* Everything on the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* The white card in the center */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* Big title */
+h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #1a1a2e;
+}
+
+/* Grey subtitle below the title */
+.subtitle {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+/* The big text box */
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 16px;
+  font-size: 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Highlight the box when clicked */
+textarea:focus {
+  border-color: #534AB7;
+}
+
+/* The analyze button */
+button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 14px;
+  background-color: #534AB7;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Darken button when hovered */
+button:hover {
+  background-color: #3C3489;
+}
+
+/* Results box at the bottom */
+#results {
+  margin-top: 32px;
+  padding: 20px;
+  background: #f8f8ff;
+  border-left: 4px solid #534AB7;
+  border-radius: 0 10px 10px 0;
+  color: #444;
+  font-size: 15px;
+}
