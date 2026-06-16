@@ -51,7 +51,7 @@ function App() {
         body: JSON.stringify({ jobText })
       });
       const data = await res.json();
-      setResult(parseResult(data.result));
+      setResult({ ...parseResult(data.result), sources: data.sources || [] });
     } catch (err) {
       setError('Could not reach the server. Is it running?');
     } finally {
@@ -166,6 +166,25 @@ function App() {
                 <div className="result-card verdict">
                   <h3>📊 Summary</h3>
                   <p>{result.verdict}</p>
+                </div>
+              )}
+              {result.sources && result.sources.length > 0 && (
+                <div className="result-card sources">
+                  <h3>🔗 Sources & Proof</h3>
+                  <table className="sources-table">
+                    <tbody>
+                      {result.sources.map((src, i) => (
+                        <tr key={i}>
+                          <td className="source-num">{i + 1}</td>
+                          <td>
+                            <a href={src.url} target="_blank" rel="noopener noreferrer">
+                              {src.title}
+                            </a>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               )}
             </div>

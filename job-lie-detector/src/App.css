@@ -353,3 +353,36 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   padding: 40px 20px;
   font-size: 14px;
 }
+/* Sources table */
+.result-card.sources { border-left: 4px solid #1976d2; }
+.result-card.sources h3 { color: #1976d2; }
+
+.sources-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sources-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.sources-table tr:last-child td {
+  border-bottom: none;
+}
+
+.source-num {
+  width: 24px;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.sources-table a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.sources-table a:hover {
+  text-decoration: underline;
+}
